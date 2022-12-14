@@ -1,5 +1,5 @@
 (() => {
-    const sliderItems = Array.from(document.getElementsByClassName("garant-slider__item"));
+    const sliderItems = Array.from(document.getElementsByClassName("garant-slider__item-wrapper"));
     const sliderItemCount = sliderItems.length;
 
     let counter = 1;

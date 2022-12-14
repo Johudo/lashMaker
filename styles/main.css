@@ -178,6 +178,7 @@
     color: var(--dark-background-color);
     background-image: url("../assets/images/light-backround.png");
     background-position: 50% 50%;
+    background-repeat: repeat;
 }
 
 .first-section h1 {
@@ -611,17 +612,20 @@
 .garant-slider__item {
     position: relative;
 
-    flex-shrink: 0;
     width: calc(100% - 20px);
     color: var(--dark-background-color);
-    transform: translateX(calc(var(--garant-slider-item-default-translate) + var(--garant-slider-item-translate)));
-    transition: ease-in-out 0.3s;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     padding-left: 40%;
+}
+
+.garant-slider__item-wrapper {
+    flex-shrink: 0;
+    transform: translateX(calc(var(--garant-slider-item-default-translate) + var(--garant-slider-item-translate)));
+    transition: ease-in-out 0.3s;
 }
 
 .garant-slider__item-wrapper:nth-child(4n + 1) .garant-slider__item {
