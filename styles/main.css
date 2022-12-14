@@ -151,7 +151,7 @@
     z-index: -1;
 
     content: "";
-    background-image: url("/assets/images/paper-background.png");
+    background-image: url("../assets/images/paper-background.png");
     background-position: 50% 50%;
     opacity: 0.6;
 
@@ -167,7 +167,7 @@
     z-index: -1;
 
     content: "";
-    background-image: url("/assets/images/film-overlay.png");
+    background-image: url("../assets/images/film-overlay.png");
     background-position: 50% 50%;
     opacity: 0.3;
 
@@ -176,7 +176,7 @@
 
 .section__light-background {
     color: var(--dark-background-color);
-    background-image: url("/assets/images/light-backround.png");
+    background-image: url("../assets/images/light-backround.png");
     background-position: 50% 50%;
 }
 
@@ -460,7 +460,7 @@
     left: 0;
     z-index: -1;
     transform: translate(var(--shadow-translate-x), calc(-1 * var(--shadow-translate-x)));
-    background-image: url("/assets/images/slider-shadow.png");
+    background-image: url("../assets/images/slider-shadow.png");
     background-position: 50% 50%;
     background-size: cover;
 }
