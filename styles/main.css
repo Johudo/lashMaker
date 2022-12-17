@@ -27,6 +27,10 @@
     --garant-slider-item-default-translate: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding: 0 28px;
 }
@@ -134,13 +138,14 @@
     position: relative;
     color: var(--white-color);
     width: 100%;
+    overflow-x: hidden;
 }
 
 .section__dark-background {
     position: relative;
     color: var(--white-color);
     background-color: var(--black-color);
-    z-index: 1;
+    z-index: 5;
 }
 
 .section__dark-background::before {
@@ -184,7 +189,7 @@
 
 .first-section h1 {
     font-family: var(--dela-gothic-one-font);
-    font-size: 4em;
+    font-size: 5em;
     line-height: 1;
     font-weight: 400;
     margin-bottom: 16px;
@@ -224,6 +229,8 @@
     justify-content: space-between;
     padding: 36px 28px 24px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-mobile .header-mobile__logo-wrapper {
@@ -235,39 +242,62 @@
     width: 32px;
 }
 
-.header-mobile .header-mobile__burger {
+.header-mobile__burger-wrapper {
+    cursor: pointer;
+}
+
+.header-mobile__burger {
+    display: block;
     width: 24px;
 }
 
 .header-desktop {
-    display: none;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-background-color);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    text-align: right;
+    font-size: 24px;
+    transition: transform ease-in-out 0.3s;
+}
+
+.header-desktop.hidden {
+    transform: translateX(100%);
 }
 
 .header-desktop__logo {
     display: block;
-    padding: 45px 150px;
+    padding: 20px 30px;
     background-color: var(--white-color);
     color: var(--dark-background-color);
     text-align: center;
     font-family: var(--dela-gothic-one-font);
 }
 
+.header-desktop__exit {
+    display: block;
+    margin: 30px 0px;
+    padding: 0 30px;
+}
+
+.header-desktop__exit img {
+    display: block;
+    width: 30px;
+}
+
 .header-desktop__logo span {
     color: var(--green-color);
 }
 
-.header-desktop__nav {
-    flex-grow: 1;
-}
-
 .header-desktop__nav-list {
-    padding: 0 50px;
-    display: flex;
-    gap: 40px;
+    padding: 0 30px;
 }
 
 .header-desktop__nav-list li {
+    margin-bottom: 24px;
     transition: 0.3s;
 }
 
@@ -276,8 +306,25 @@
 }
 
 .header-desktop__phone {
+    display: block;
     color: var(--green-color);
     font-weight: 600;
+    padding: 0 30px;
+}
+
+.header-desktop__socials {
+    margin: 50px 0 0;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.header-desktop__socials a,
+.header-desktop__socials img {
+    display: block;
 }
 
 .first-section__socials {
@@ -310,7 +357,7 @@
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .first-section {
         min-height: 100vh;
         display: flex;
@@ -318,7 +365,7 @@
     }
 
     .header-mobile {
-        max-width: 700px;
+        max-width: 800px;
         padding-left: 0;
         padding-right: 0;
     }
@@ -342,6 +389,7 @@
 
     .first-section h1 {
         margin-bottom: 30px;
+        font-size: 4em;
     }
 
     .first-section__button {
@@ -364,15 +412,53 @@
     }
 }
 
-@media (min-width: 1270px) {
+@media (min-width: 1250px) {
     .header-mobile {
         display: none;
     }
 
     .header-desktop {
         display: flex;
+        align-items: center;
         width: unset;
         padding-right: 50px;
+
+        position: static;
+        background-color: unset;
+        z-index: 10;
+        text-align: left;
+        font-size: unset;
+    }
+
+    .header-desktop.hidden {
+        transform: unset;
+    }
+
+    .header-desktop__logo {
+        padding: 45px 120px;
+    }
+
+    .header-desktop__exit,
+    .header-desktop__socials {
+        display: none;
+    }
+
+    .header-desktop__nav {
+        flex-grow: 1;
+    }
+
+    .header-desktop__nav-list li {
+        margin-bottom: 0px;
+    }
+
+    .header-desktop__nav-list {
+        padding: 0 50px;
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-desktop__phone {
+        padding: unset;
     }
 
     .first-section h1 {
@@ -387,6 +473,7 @@
 @media (min-width: 1650px) {
     .header-desktop {
         width: calc(50% + 750px);
+        padding-right: 0px;
     }
 
     .first-section__woman-desktop {
@@ -626,9 +713,11 @@
 
 .third-section__button__desktop {
     display: none;
+    text-align: center;
 }
 
 .third-section__button__mobile {
+    text-align: center;
     margin-top: 32px;
     width: calc(100% - var(--shadow-translate-x));
 }
