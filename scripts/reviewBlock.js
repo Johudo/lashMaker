@@ -5,7 +5,7 @@
         const reviewBlock = document.getElementById("review-block");
         const sectionBlock = document.getElementById("fifth-section");
 
-        if (screen.width < 1700) {
+        if (window.innerWidth < 1300) {
             button.style.height = "unset";
             sectionBlock.style.marginTop = "unset";
             return;
@@ -17,5 +17,9 @@
     };
 
     window.addEventListener("resize", changeBlockStyles);
+
     changeBlockStyles();
+
+    // Fix position sometimes
+    setTimeout(changeBlockStyles, 300);
 })();
