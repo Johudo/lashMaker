@@ -698,6 +698,10 @@
     }
 }
 
+.fourth-section-wrapper {
+    overflow-x: hidden;
+}
+
 .fourth-section {
     z-index: 1;
     padding: 24px 0;
