@@ -717,6 +717,7 @@ html {
 }
 
 .third-section__button__mobile {
+    display: block;
     text-align: center;
     margin-top: 32px;
     width: calc(100% - var(--shadow-translate-x));
