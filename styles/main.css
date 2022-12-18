@@ -1247,7 +1247,22 @@ html {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
+    .sixth-section__map-marker,
+    .sixth-section__map-marker img {
+        display: block;
+    }
+
+    .sixth-section__map-marker {
+        position: absolute;
+        left: 12%;
+        bottom: 47%;
+    }
+
+    .sixth-section__show-map {
+        display: none;
+    }
+
     .sixth-section {
         background-image: url("../assets/images/map.png");
         background-size: cover;
@@ -1263,12 +1278,12 @@ html {
     }
 
     .sixth-section__email-button {
-        padding: 80px 60px;
+        padding: 40px 30px;
     }
 
     .sixth-section__content {
         width: unset;
-        padding: 120px 150px;
+        padding: 60px 100px;
     }
 
     .sixth-section__email,
@@ -1312,7 +1327,7 @@ html {
     .sixth-section__contacts {
         gap: 24px;
         justify-content: flex-end;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .sixth-section__contacts a,
@@ -1321,30 +1336,24 @@ html {
     }
 }
 
-@media (min-width: 1450px) {
-    .sixth-section__map-marker,
-    .sixth-section__map-marker img {
-        display: block;
-    }
-
+@media (min-width: 1350px) {
     .sixth-section__map-marker {
-        position: absolute;
-        left: 12%;
-        bottom: 47%;
-    }
-
-    .sixth-section__show-map {
-        display: none;
-    }
-
-    .sixth-section__contacts {
-        margin-bottom: 0px;
+        left: 17%;
     }
 }
 
 @media (min-width: 1550px) {
     .sixth-section__map-marker {
         left: 17%;
+    }
+
+    .sixth-section__email-button {
+        padding: 80px 60px;
+    }
+
+    .sixth-section__content {
+        width: unset;
+        padding: 120px 150px;
     }
 }
 
