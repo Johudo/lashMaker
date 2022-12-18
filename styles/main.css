@@ -777,7 +777,7 @@ html {
     }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1700px) {
     .third-section {
         padding-left: 160px;
         max-width: unset;
@@ -1321,7 +1321,7 @@ html {
     }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1450px) {
     .sixth-section__map-marker,
     .sixth-section__map-marker img {
         display: block;
@@ -1329,7 +1329,7 @@ html {
 
     .sixth-section__map-marker {
         position: absolute;
-        left: 20%;
+        left: 12%;
         bottom: 47%;
     }
 
@@ -1339,6 +1339,18 @@ html {
 
     .sixth-section__contacts {
         margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1550px) {
+    .sixth-section__map-marker {
+        left: 17%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .sixth-section__map-marker {
+        left: 20%;
     }
 }
 
