@@ -22,4 +22,10 @@
 
     // Fix position sometimes
     setTimeout(changeBlockStyles, 300);
+    setTimeout(changeBlockStyles, 1000);
+    setTimeout(changeBlockStyles, 2000);
+    setTimeout(changeBlockStyles, 3000);
+    setTimeout(changeBlockStyles, 4000);
+    setTimeout(changeBlockStyles, 5000);
+    setTimeout(changeBlockStyles, 10000);
 })();
