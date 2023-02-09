@@ -187,7 +187,7 @@ html {
     background-repeat: repeat;
 }
 
-.first-section h1 {
+.first-section h2 {
     font-family: var(--dela-gothic-one-font);
     font-size: 5em;
     line-height: 1;
@@ -196,7 +196,7 @@ html {
     text-transform: uppercase;
 }
 
-.first-section h2 {
+.first-section .previous-h2 {
     font-size: 1.1em;
     font-weight: 600;
     text-transform: uppercase;
