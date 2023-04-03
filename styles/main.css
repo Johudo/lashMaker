@@ -174,7 +174,7 @@ html {
     z-index: -1;
 
     content: "";
-    background-image: url("../assets/images/film-overlay.png");
+    background-image: url("../assets/images/film-overlay.webp");
     background-position: 50% 50%;
     background-size: cover;
     opacity: 0.3;
@@ -182,7 +182,7 @@ html {
 
 .section__light-background {
     color: var(--dark-background-color);
-    background-image: url("../assets/images/light-backround.png");
+    background-image: url("../assets/images/light-backround.webp");
     background-position: 50% 50%;
     background-repeat: repeat;
 }
@@ -1455,4 +1455,17 @@ footer {
     .footer-content {
         max-width: 1600px;
     }
+}
+
+.image-object * {
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
