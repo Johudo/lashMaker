@@ -7,3 +7,13 @@
     font-weight: 400;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Uni Sans";
+    src: local("Uni Sans Black Italic"), local("Uni-Sans-Black-Italic"),
+        url("../assets/fonts/unisansheavycapsitalic.woff2") format("woff2"),
+        url("../assets/fonts/unisansheavycapsitalic.woff") format("woff"),
+        url("../assets/fonts/unisansheavycapsitalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
