@@ -1555,16 +1555,17 @@ html {
     }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1450px) {
     .sixth-section__map-marker,
     .sixth-section__map-marker img {
         display: block;
+        max-width: 100px;
     }
 
     .sixth-section__map-marker {
         position: absolute;
-        left: 12%;
-        bottom: 47%;
+        left: 22%;
+        bottom: 50%;
     }
 
     .sixth-section__show-map {
@@ -1644,17 +1645,7 @@ html {
     }
 }
 
-@media (min-width: 1350px) {
-    .sixth-section__map-marker {
-        left: 17%;
-    }
-}
-
-@media (min-width: 1550px) {
-    .sixth-section__map-marker {
-        left: 17%;
-    }
-
+@media (min-width: 1800px) {
     .sixth-section__email-button {
         padding: 80px 60px;
     }
@@ -1662,12 +1653,6 @@ html {
     .sixth-section__content {
         width: unset;
         padding: 120px 150px;
-    }
-}
-
-@media (min-width: 1800px) {
-    .sixth-section__map-marker {
-        left: 20%;
     }
 }
 
