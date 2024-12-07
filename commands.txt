@@ -1,1 +1,3 @@
 pm2 start npm --name lash_server -- run start 
+pm2 serve admin/dist/ 8082 --spa --name lash_admin
+sudo systemctl restart nginx
