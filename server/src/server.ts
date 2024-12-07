@@ -1,21 +1,16 @@
 import jsonServer from "json-server";
-import path from "path";
-import fs from "fs";
-
-const dbFile = path.resolve("db", "db.json");
-
-function getDB() {
-    const file = fs.readFileSync(dbFile, "utf8");
-    return JSON.parse(file);
-}
+import { authMiddleware } from "./isAuthificated";
+import { DB_FILE_PATH } from "./config";
+import { getDB } from "./getDB";
 
 const server = jsonServer.create();
 const middlewares = jsonServer.defaults();
-const router = jsonServer.router(dbFile);
+const router = jsonServer.router(DB_FILE_PATH);
 
 server.set("view engine", "ejs");
 
 server.use(middlewares);
+server.use(authMiddleware);
 
 server.get("/", function (req, res) {
     const dbData = getDB();
@@ -23,6 +18,10 @@ server.get("/", function (req, res) {
         ...dbData,
         services: dbData.services.sort((a: any, b: any) => a.sort - b.sort),
     });
+});
+
+server.post("/api/login", function (req, res) {
+    res.json({ success: true });
 });
 
 server.use("/api", router);

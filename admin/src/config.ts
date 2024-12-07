@@ -9,8 +9,10 @@ export const API_LIST_URLS = {
     Contacts: {
         index: BASE_API_URL + "/api/contacts",
     },
+    Login: BASE_API_URL + "/api/login",
 };
 
 export const LINK_STRUCTURE = {
     Index: APP_BASE_URL,
+    Login: APP_BASE_URL + "/login",
 };
