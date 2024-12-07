@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Наращивание ресниц в Хабаровске Li-lash</title>
+
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+  <meta name="description" content="Привет! Меня зовут Лиза, я сертифицированный мастер по наращиванию ресниц в Хабаровске. Приглашаю тебя на наращивание любого объема и эффекта." />
+  <meta name="keywords" content="Наращивание ресниц в Хабаровске, наращивание ресниц хабаровск, мастер по наращиванию ресниц в Хабаровске, мастер по наращиванию ресниц хабаровск, нарастить ресницы хабаровск, нарастить ресницы в Хабаровске, ресницы хабаровск" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Подчеркивание достоинств - именно это и является поводом нашего с вами знакомства" />
+  <meta property="og:image" content="./assets/open-graph/image.png" />
+  <meta property="og:image:width" content="660" />
+  <meta property="og:image:height" content="660" />
+  <meta property="og:url" content="https://li-lash.ru/" />
+  <meta property="og:site_name" content="Наращивание ресниц Li-lash" />
+  <meta property="og:type" content="website" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/dela-gothic-one-font.css" />
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./styles/defaults.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+
+  <!-- Montserrat font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet" />
+
+  <script defer src="./scripts/heightResize.js"></script>
+  <script defer src="./scripts/mobileMenu.js"></script>
+  <script defer src="./scripts/resultsSlider.js"></script>
+  <script defer src="./scripts/garantSlider.js"></script>
+  <script defer src="./scripts/reviewBlock.js"></script>
+</head>
+
+<body>
+  <section class="first-section section__dark-background" id="first-section">
+    <div class="header-mobile">
+      <a href="./" class=".header-mobile__logo-wrapper">
+        <img src="./assets/images/logo.svg" alt="E.PODREZ" class="header-mobile__logo" />
+      </a>
+
+      <button class="header-mobile__burger-wrapper" id="header-mobile-open-button">
+        <img src="./assets/images/burger.svg" alt="Menu" class="header-mobile__burger" />
+      </button>
+    </div>
+
+    <header class="header-desktop hidden" id="header-desktop">
+      <a href="./" class="header-desktop__logo">E<span>.</span>PODREZ</a>
+
+      <button class="header-desktop__exit" id="header-mobile-close-button">
+        <img src="./assets/images/exit.svg" alt="exit" />
+      </button>
+
+      <nav class="header-desktop__nav">
+        <ul class="header-desktop__nav-list">
+          <li class="header-desktop__nav-list-item"><a href="#second-section">Обо мне</a></li>
+          <li class="header-desktop__nav-list-item"><a href="#third-section">Мои работы</a></li>
+          <li class="header-desktop__nav-list-item"><a href="#price-section">Прайс</a></li>
+          <li class="header-desktop__nav-list-item"><a href="#fifth-section">Отзывы</a></li>
+          <li class="header-desktop__nav-list-item"><a href="#sixth-section">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="tel:<%=contacts.phone %>" class="header-desktop__phone">8 (924) 218-83-50</a>
+
+      <div class="header-desktop__socials">
+        <a href="<%=contacts.instagram %>">
+          <img src="./assets/images/instagram.svg" alt="instagram" />
+        </a>
+        <a href="<%=contacts.whatsapp %>">
+          <img src="./assets/images/whatsapp.svg" alt="whatsapp" />
+        </a>
+      </div>
+    </header>
+
+    <h1 style="display: none">Наращивание ресниц в Хабаровске</h1>
+
+    <div class="first-section__container container">
+      <div class="first-section__content">
+        <div class="first-section__content-inner">
+          <div class="previous-h2">ПРИВЕТ, Я ТВОЙ</div>
+          <h2>LASH MAKER</h2>
+          <h3>
+            Коррекция несовершенств, подчеркивание достоинств - именно это и является поводом нашего с
+            вами знакомства
+          </h3>
+          <a href="#second-section" class="first-section__button button">
+            <span class="button__inner">ДАВАЙ ЗНАКОМИТЬСЯ</span>
+          </a>
+        </div>
+
+        <div class="first-section__socials">
+          <a href="<%=contacts.instagram %>">
+            <img src="./assets/images/instagram.svg" alt="instagram" />
+          </a>
+          <a href="<%=contacts.whatsapp %>">
+            <img src="./assets/images/whatsapp.svg" alt="whatsapp" />
+          </a>
+        </div>
+      </div>
+
+      <img src="./assets/images/woman.webp" alt="woman" class="first-section__woman-desktop" />
+    </div>
+
+    <img src="./assets/images/woman-mobile.png" alt="woman" class="first-section__woman-mobile" />
+  </section>
+
+  <div class="section__light-background">
+    <section class="second-section container" id="second-section">
+      <div>
+        <h3>Обо мне</h3>
+        <p>
+          Привет! Меня зовут Лиза, я сертифицированный мастер по наращиванию ресниц. Приглашаю тебя на
+          наращивание любого объема и эффекта
+        </p>
+        <p>
+          Стремлюсь стать лучшей в своём деле. Использую только качественные материалы, поэтому уверена,
+          что вы останетесь довольны после процедуры
+        </p>
+
+        <a href="<%=contacts.instagram %>" class="check-button">
+          <span>CHECK</span>
+          <div class="check-button__image-wrapper">
+            <img src="./assets//images/instagram-dark-60.svg" alt="instagram" class="check-button__image-light" />
+            <img src="./assets//images/instagram-dark.svg" alt="instagram" class="check-button__image-dark" />
+          </div>
+        </a>
+      </div>
+
+      <div class="my-photo">
+        <img src="./assets/images/my-photo.png" alt="My photo" class="my-photo__image" />
+        <img src="./assets/images/heart.png" alt="heart" class="my-photo__heart" />
+      </div>
+    </section>
+
+    <section class="third-section container" id="third-section">
+      <div class="third-section__content">
+        <h3>Вот некоторые из моих работ</h3>
+        <p>
+          Несмотря на то, что каждый мой клиент индивидуален и имеет свои предпочтения, я уделяю внимание
+          каждой мелочи, которая улучшит и подчеркнет образ
+        </p>
+
+        <div class="results-slider__counter"><span id="results-slider-current-count">01</span>/8</div>
+
+        <a class="third-section__button__desktop button button__dark-shadow" href="<%=contacts.whatsapp %>">
+          <span class="button__inner">Записаться</span>
+        </a>
+      </div>
+
+      <div class="results-slider__wrapper">
+        <div class="results-slider">
+          <div class="results-slider__buttons">
+            <button class="results-slider__left-button" id="results-slider-left-button">
+              <img src="./assets/images/arrow-button.png" alt="button.png" />
+            </button>
+            <button class="results-slider__right-button" id="results-slider-right-button">
+              <img src="./assets/images/arrow-button.png" alt="button.png" />
+            </button>
+          </div>
+
+          <img src="./assets/images/results-slider/1.jpg" alt="result" class="results-slider__result-image" id="results-slider-image-1" />
+          <img src="./assets/images/results-slider/2.jpg" alt="result" class="results-slider__result-image" id="results-slider-image-2" style="opacity: 0; visibility: hidden" />
+          <img src="./assets/images/results-slider/3.jpg" alt="result" class="results-slider__result-image" id="results-slider-image-3" style="opacity: 0; visibility: hidden" />
+          <img src="./assets/images/results-slider/4.jpg" alt="result" class="results-slider__result-image" id="results-slider-image-4" style="opacity: 0; visibility: hidden" />
+          <img src="./assets/images/results-slider/5.jpg" alt="result" class="results-slider__result-image" id="results-slider-image-5" style="opacity: 0; visibility: hidden" />
+          <img src="./assets/images/results-slider/6.png" alt="result" class="results-slider__result-image" id="results-slider-image-6" style="opacity: 0; visibility: hidden" />
+          <img src="./assets/images/results-slider/7.jpg" alt="result" class="results-slider__result-image" id="results-slider-image-7" style="opacity: 0; visibility: hidden" />
+          <img src="./assets/images/results-slider/8.jpg" alt="result" class="results-slider__result-image" id="results-slider-image-8" style="opacity: 0; visibility: hidden" />
+        </div>
+      </div>
+
+      <img src="./assets/images/color-woman.png" alt="color-woman" class="third-section__color-woman-desktop" />
+
+      <a class="third-section__button__mobile button button__dark-shadow" href="<%=contacts.whatsapp %>">
+        <span class="button__inner">Записаться</span>
+      </a>
+    </section>
+
+    <section class="price-section section__dark-background" id="price-section">
+      <div class="price-section__content">
+        <h3>Прайс-лист</h3>
+        <div class="price-section__sale">СКИДКА ДО 15% НА ПЕРВОЕ ПОСЕЩЕНИЕ</div>
+
+        <div class="price-section__prices-wrapper">
+          <div class="price-section__prices-block">
+            <div class="price-block">
+              <div class="price-block__categories">
+                <span class="price-block__new-price price-block__new-price__text">Мастер</span>
+                <span class="price-block__new-price price-block__new-price__text">Топ-мастер</span>
+              </div>
+            </div>
+
+            <% for(var i = 0; i < Math.ceil(services.length / 2); i++) {%>
+            <div class="price-block">
+              <div class="price-block__old-price-wrapper">
+                <div class="price-block__old-price">
+                  <span class="price-block__old-price-value <%= !services[i].priceMasterBefore ? "price-block__old-price-value__empty" : "" %>">
+                    &nbsp;<%= services[i].priceMasterBefore %>&nbsp;
+                  </span>
+                </div>
+
+                <div class="price-block__old-price">
+                  <span class="price-block__old-price-value <%= !services[i].priceTopBefore ? "price-block__old-price-value__empty" : "" %>">
+                    &nbsp;<%= services[i].priceTopBefore %>&nbsp;
+                  </span>
+                </div>
+
+              </div>
+
+              <div class="price-block__bottom">
+                <p class="price-block__title">
+                  <%= services[i].title?.toLocaleUpperCase?.() || "" %>
+                </p>
+                <span class="price-block__line"></span>
+
+                <% if (!!services[i].priceMasterCurrent) { %>
+                <span class="price-block__new-price <%= Number.isNaN(parseInt(services[i].priceMasterCurrent)) ? "price-block__new-price__text" : "" %>">
+                  <%= services[i].priceMasterCurrent?.toLocaleUpperCase?.() %>
+                </span>
+                <% } %>
+
+                <% if (!!services[i].priceTopCurrent) { %>
+                <span class="price-block__new-price <%= Number.isNaN(parseInt(services[i].priceTopCurrent)) ? "price-block__new-price__text" : "" %>">
+                  <%= services[i].priceTopCurrent?.toLocaleUpperCase?.() %>
+                </span>
+                <% } %>
+
+              </div>
+
+            </div>
+            <% } %>
+
+          </div>
+          <div class="price-section__prices-block">
+            <div class="price-block price-block--desktop-only">
+              <div class="price-block__categories">
+                <span class="price-block__new-price price-block__new-price__text invisible">Мастер</span>
+                <span class="price-block__new-price price-block__new-price__text invisible">Топ-мастер</span>
+              </div>
+            </div>
+
+            <% for(var i = Math.ceil(services.length / 2); i < services.length; i++) {%>
+            <div class="price-block">
+              <div class="price-block__old-price-wrapper">
+                <div class="price-block__old-price">
+                  <span class="price-block__old-price-value <%= !services[i].priceMasterBefore ? "price-block__old-price-value__empty" : "" %>">
+                    &nbsp;<%= services[i].priceMasterBefore %>&nbsp;
+                  </span>
+                </div>
+
+                <div class="price-block__old-price">
+                  <span class="price-block__old-price-value <%= !services[i].priceTopBefore ? "price-block__old-price-value__empty" : "" %>">
+                    &nbsp;<%= services[i].priceTopBefore %>&nbsp;
+                  </span>
+                </div>
+
+              </div>
+
+              <div class="price-block__bottom">
+                <p class="price-block__title">
+                  <%= services[i].title?.toLocaleUpperCase?.() || "" %>
+                </p>
+                <span class="price-block__line"></span>
+
+                <% if (!!services[i].priceMasterCurrent) { %>
+                <span class="price-block__new-price <%= Number.isNaN(parseInt(services[i].priceMasterCurrent)) ? "price-block__new-price__text" : "" %>">
+                  <%= services[i].priceMasterCurrent?.toLocaleUpperCase?.() %>
+                </span>
+                <% } %>
+
+                <% if (!!services[i].priceTopCurrent) { %>
+                <span class="price-block__new-price <%= Number.isNaN(parseInt(services[i].priceTopCurrent)) ? "price-block__new-price__text" : "" %>">
+                  <%= services[i].priceTopCurrent?.toLocaleUpperCase?.() %>
+                </span>
+                <% } %>
+
+              </div>
+
+            </div>
+            <% } %>
+
+            <a class="price-section__button button button__light-shadow" href="<%=contacts.whatsapp %>">
+              <span class="button__inner">НАПИСАТЬ WHATSAPP</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="fourth-section-wrapper" id="fourth-section">
+      <section class="fourth-section section__dark-background">
+        <h3>Гарантирую</h3>
+
+        <div class="garant-slider">
+          <div class="garant-slider__item-wrapper">
+            <div class="garant-slider__item">
+              <img src="./assets/images/garant-slider/1.png" alt="Стиль" />
+              <div class="garant-slider__item-counter"><span>01</span>/4</div>
+              <h4>Стиль</h4>
+              <p>Стиль - фундамент образа для каждого клиента</p>
+            </div>
+          </div>
+
+          <div class="garant-slider__item-wrapper">
+            <div class="garant-slider__item">
+              <img src="./assets/images/garant-slider/2.png" alt="Качество" />
+              <div class="garant-slider__item-counter"><span>02</span>/4</div>
+              <h4>Качество</h4>
+              <p>Во время работы используются только качественные материалы</p>
+            </div>
+          </div>
+
+          <div class="garant-slider__item-wrapper">
+            <div class="garant-slider__item">
+              <img src="./assets/images/garant-slider/3.png" alt="Уют" />
+              <div class="garant-slider__item-counter"><span>03</span>/4</div>
+              <h4>Уют</h4>
+              <p>Весь рабочий процесс будет проходить в уютной студии</p>
+            </div>
+          </div>
+
+          <div class="garant-slider__item-wrapper">
+            <div class="garant-slider__item">
+              <img src="./assets/images/garant-slider/4.png" alt="Результат" />
+              <div class="garant-slider__item-counter"><span>04</span>/4</div>
+              <h4>Результат</h4>
+              <p>В конечном итоге вы останетесь довольны своим новым образом</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="garant-slider__controller">
+          <div class="garant-slider__buttons">
+            <button class="garant-slider__left-button" id="garant-slider-left-button">
+              <img src="./assets/images/arrow-button.png" alt="arrow-button" />
+            </button>
+            <button class="garant-slider__right-button" id="garant-slider-right-button">
+              <img src="./assets/images/arrow-button-dark.png" alt="arrow-button-dark" />
+            </button>
+          </div>
+
+          <div class="garant-slider__status-bar">
+            <div class="garant-slider__status-counter" id="garant-slider-status-counter">01</div>
+            <div class="garant-slider__status-line" id="garant-slider-status-line"></div>
+            <div class="garant-slider__status-counter">04</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="fifth-section" id="fifth-section">
+      <h3>Отзывы</h3>
+
+      <img src="./assets/images/review-woman.png" alt="review-woman" class="fifth-section__woman" id="fifth-section-woman" />
+
+      <div class="review-block__wrapper">
+        <div class="review-block" id="review-block">
+          <span class="review-block__quotes">,,</span>
+          <div class="review-block__date">14.10.22</div>
+          <div class="review-block__name">Анастасия</div>
+
+          <div class="review-block__rating">
+            <img src="./assets/images/star.svg" alt="star" />
+            <img src="./assets/images/star.svg" alt="star" />
+            <img src="./assets/images/star.svg" alt="star" />
+            <img src="./assets/images/star.svg" alt="star" />
+            <img src="./assets/images/star.svg" alt="star" />
+          </div>
+
+          <div class="review-block__text">
+            Очень рекомендую мастера, являюсь постоянным клиентом. Работа выполняется всегда
+            качественно, с любовью. Мастер очень быстро выполняет свою работу. Относится с заботой о
+            Вас, принимает в тёплом и уютном кабинете. Рекомендую ❤️
+          </div>
+        </div>
+
+        <a class="review-block__button" id="review-block-button" href="<%=contacts.avito %>">
+          ЧИТАТЬ ВСЕ
+        </a>
+      </div>
+    </section>
+
+    <section class="sixth-section" id="sixth-section">
+      <a href="<%=contacts.yandexMap %>" class="sixth-section__map-marker">
+        <img src="./assets/images/marker.png" alt="marker" class="sixth-section__map-marker" />
+      </a>
+
+      <div class="sixth-section__inner">
+        <a href="<%=contacts.whatsapp %>" class="sixth-section__email-button">
+          <img src="./assets/images/email.svg" alt="email" />
+        </a>
+
+        <div class="sixth-section__content section__dark-background">
+          <h3 class="sixth-section__title">МОЙ АДРЕС И&nbsp;КОНТАКТЫ</h3>
+          <p class="sixth-section__description">Если остались вопросы, то скорее напиши мне</p>
+
+          <div class="sixth-section__info-wrapper">
+            <div class="sixth-section__address-desktop">
+              <span>г. Хабаровск</span>
+              <span>ул. Камская, 6</span>
+            </div>
+
+            <div>
+              <p class="sixth-section__phone">
+                <a href="tel:<%=contacts.phone %>">8 (924) 218-83-50</a>
+              </p>
+              <p class="sixth-section__email">
+                <a href="mailto:elizavetapodrez@yandex.ru">elizavetapodrez@yandex.ru</a>
+              </p>
+              <p class="sixth-section__address-mobile">г. Хабаровск, ул. Камская, 6</p>
+
+              <div class="sixth-section__contacts-wrapper">
+                <div class="sixth-section__contacts">
+                  <a href="<%=contacts.instagram %>">
+                    <img src="./assets/images/instagram-color.svg" alt="instagram" />
+                  </a>
+                  <a href="<%=contacts.whatsapp %>">
+                    <img src="./assets/images/whatsapp-color.svg" alt="whatsapp" />
+                  </a>
+                  <a href="<%=contacts.avito %>">
+                    <img src="./assets/images/avito.svg" alt="avito" />
+                  </a>
+                </div>
+                <p class="sixth-section__show-map">
+                  <a href="<%=contacts.yandexMap %>">Посмотреть на карте</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h3 class="footer__title">LASH MAKER</h3>
+        <div class="footer__description">Коррекция несовершенств, подчеркивание достоинств</div>
+        <div class="footer__socials-wrapper">
+          <a href="tel:<%=contacts.phone %>"><img src="./assets/images/phone.svg" alt="phone" /></a>
+          <a href="<%=contacts.instagram %>">
+            <img src="./assets/images/instagram-color.svg" alt="instagram" />
+          </a>
+          <a href="<%=contacts.whatsapp %>">
+            <img src="./assets/images/whatsapp-color.svg" alt="whatsapp" />
+          </a>
+          <a href="<%=contacts.avito %>">
+            <img src="./assets/images/avito.svg" alt="avito" />
+          </a>
+        </div>
+      </div>
+      <ul class="footer__nav-list">
+        <li><a href="#first-section">Главная</a></li>
+        <li><a href="#second-section">Обо мне</a></li>
+        <li><a href="#price-section">Прайс</a></li>
+        <li><a href="#third-section">Портфолио</a></li>
+        <li><a href="#sixth-section">Контакты</a></li>
+      </ul>
+    </div>
+
+    <a href="<%=contacts.whatsapp %>" class="footer__creator">
+      Елизавета Подрез
+      <span>2023</span>
+    </a>
+  </footer>
+
+  <div itemscope itemtype="http://schema.org/ImageObject" class="image-object">
+    <h2 itemprop="name">Наращивание ресниц в Хабаровске</h2>
+    <img src="./assets/images/imageObject.png" alt="" itemprop="contentUrl" />
+    <span itemprop="description">Наращивание ресниц в Хабаровске</span>
+  </div>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function() {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
+        }
+      }
+      (k = e.createElement(t)),
+      (a = e.getElementsByTagName(t)[0]),
+      (k.async = 1),
+      (k.src = r),
+      a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(91787043, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/91787043" style="position: absolute; left: -9999px" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
