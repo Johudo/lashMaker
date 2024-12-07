@@ -4,6 +4,7 @@ import { IndexPage } from "@/pages/IndexPage";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Theme } from "@chakra-ui/react";
 import { Toaster } from "@/components/ui/toaster";
+import { LINK_STRUCTURE } from "./config";
 
 const queryClient = new QueryClient();
 
@@ -14,7 +15,9 @@ function App() {
                 <QueryClientProvider client={queryClient}>
                     <BrowserRouter>
                         <Routes>
-                            <Route index element={<IndexPage />} />
+                            <Route path={LINK_STRUCTURE.Index}>
+                                <Route index element={<IndexPage />} />
+                            </Route>
                         </Routes>
 
                         <Toaster />
